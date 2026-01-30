@@ -1,0 +1,35 @@
+{
+  "name": "video-replication-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for AI-powered video replication",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "video-replication-mcp": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "claude",
+    "ai",
+    "video",
+    "replication"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
